@@ -35,9 +35,9 @@ resource "yandex_compute_instance" "vm-1" {
     nat       = true
   }
 
-  metadata = {
-    ssh-keys = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
-  }
+#  metadata = {
+#    ssh-keys = #"ubuntu:${file("~/.ssh/id_rsa.pub")}"
+#  }
 }
 
 resource "yandex_compute_instance" "vm-2" {
@@ -59,9 +59,9 @@ resource "yandex_compute_instance" "vm-2" {
     nat       = true
   }
 
-  metadata = {
-    ssh-keys = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
-  }
+#  metadata = {
+#    ssh-keys = #"ubuntu:${file("~/.ssh/id_rsa.pub")}"
+#  }
 }
 
 resource "yandex_vpc_network" "network-1" {
